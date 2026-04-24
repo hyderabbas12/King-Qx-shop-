@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>King Coding Shop</title>
+<style>
+body{font-family:sans-serif;background:#0f172a;color:#fff;text-align:center}
+.card{background:#1e293b;margin:15px;padding:20px;border-radius:15px;box-shadow:0 0 15px #000}
+button{background:#22c55e;color:#000;padding:10px 20px;border:none;border-radius:10px;cursor:pointer;font-weight:bold}
+button:hover{background:#16a34a}
+.discount{color:#f87171;font-weight:bold}
+</style>
+</head>
+<body><h1>👑 King Coding Shop</h1>
+<p>Buy on WhatsApp: 03087354137</p>
+<p>JazzCash / EasyPaisa: alhusaio</p><a href="https://whatsapp.com/channel/0029VbClfqU6hENuigFxFI0e" target="_blank">Join WhatsApp Channel</a>
+
+<div class="card">
+<h2>AI Bot</h2>
+<p class="discount">30$ → 21$ (30% OFF)</p>
+<button onclick="buy('AI Bot')">Buy</button>
+</div><div class="card">
+<h2>King Bot</h2>
+<p class="discount">35$ → 24.5$</p>
+<button onclick="buy('King Bot')">Buy</button>
+</div><div class="card">
+<h2>Chinese Bot</h2>
+<p class="discount">50$ → 35$</p>
+<button onclick="buy('Chinese Bot')">Buy</button>
+</div><div class="card">
+<h2>FINORIX Pro</h2>
+<p class="discount">60$ → 42$</p>
+<button onclick="buy('FINORIX Pro')">Buy</button>
+</div><div class="card">
+<h2>Demo to Real Script</h2>
+<p class="discount">30$ → 21$</p>
+<button onclick="buy('Demo to Real')">Buy</button>
+</div><div class="card">
+<h2>Lifetime Demo to Real</h2>
+<p class="discount">80$ → 56$</p>
+<button onclick="buy('Lifetime Demo to Real')">Buy</button>
+</div><script>
+function buy(product){
+let msg = `I want to buy ${product}`;
+window.open(`https://wa.me/923087354137?text=${encodeURIComponent(msg)}`,'_blank');
+}
+
+// Simple AI auto reply simulation
+setTimeout(()=>{
+alert("🤖 AI Bot: Welcome to King Coding Shop! Buy now and get 30% discount!");
+},3000);
+</script></body>
+</html>
